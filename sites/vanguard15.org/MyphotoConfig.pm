@@ -7,20 +7,20 @@ require Exporter;
 
 %photoconfig = (
 	# general
-	'title' => 'Santana 22 Photos',
+	'title' => 'Vanguard 15 Photos',
 	'header' => 'myfleet',
 
 	# database
-	'dbname' => 'santana22',
-	'dbuser' => 'santana22',
-	'dbpassword' => 'sailing',
+	'dbname' => 'vanguard15',
+	'dbuser' => 'vanguard15',
+	'dbpassword' => 'rolltack',
 
 	# adsense
 	'adsenseId' => 'pub-8024486686536860',
 	'adsenseColor' => ['2D5893', '99aacc', '000000', '000099', '003366' ],
 
 	# analytics
-	'analyticsId' => 'UA-242507-2',
+	'analyticsId' => 'UA-242507-5',
 
 	# directory
 	'photoDirectory' => '/photos/',
