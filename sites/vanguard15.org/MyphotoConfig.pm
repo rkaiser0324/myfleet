@@ -1,4 +1,5 @@
 package MyphotoConfig;
+
 use vars qw(%config @EXPORT @EXPORT_OK @ISA);
 require Exporter;
 
@@ -12,8 +13,8 @@ require Exporter;
 
 	# database
 	'dbname' => 'vanguard15',
-	'dbuser' => 'vanguard15',
-	'dbpassword' => 'rolltack',
+	'dbuser' => 'root',
+	'dbpassword' => '',
 
 	# adsense
 	'adsenseId' => 'pub-8024486686536860',
