@@ -57,3 +57,11 @@ passwd vanguard15
 htpasswd -c /media/sf_shared/vanguard15/.htpasswd vanguard15
 # Enter the desired password
 ```
+
+On the database, make sure you set the default timezone to be your preferred one.  E.g., for Pacific time, in `/etc/mysql/my.cnf` add
+
+```
+default-time-zone='-07:00'
+```
+
+under the [mysqld] section.
