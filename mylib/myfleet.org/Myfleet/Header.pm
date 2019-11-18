@@ -41,6 +41,7 @@ sub display_header
 
 	my $style_html = '';
 	my $js_html = '';
+	my $script_html = '';
 
 	if ($external_style)
 	{

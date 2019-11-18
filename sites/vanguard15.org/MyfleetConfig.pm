@@ -5,6 +5,8 @@ require Exporter;
 @ISA = ('Exporter');
 @EXPORT_OK = qw(%config);
 
+# This suppresses the CGI warning
+$CGI::LIST_CONTEXT_WARN = 0;
 
 # database
 %config = (
