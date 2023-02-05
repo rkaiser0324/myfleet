@@ -56,6 +56,7 @@ $CGI::LIST_CONTEXT_WARN = 0;
 		'Roster' => '/roster/',
 		'Crew List' => '/crew/',
 		'Messages' => '/msgs/?f=1',
+		'Charters' => '/articles/charter',
 		'For Sale' => '/msgs/?f=2',
 		'Mailing List' => '/articles/emaillist',
 		'Photos' => '/photos/',
