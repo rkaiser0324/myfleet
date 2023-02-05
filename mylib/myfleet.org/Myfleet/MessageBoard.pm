@@ -137,7 +137,7 @@ sub display_page
 
 		if( $p{'pm'} eq 'Post Message' )
 		{
-			if( ! $q->param('md5') || ! $q->param('code') )
+			if( ! ($q->param('md5')) || ! ( $q->param('code')) )
 			{
 				push @alerts, "Please enter the distorted text in order to post your message.";
 			}
