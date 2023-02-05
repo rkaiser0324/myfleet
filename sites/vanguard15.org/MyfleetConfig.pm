@@ -17,6 +17,7 @@ $CGI::LIST_CONTEXT_WARN = 0;
 	'dbname' => 'vanguard15',
 	'dbuser' => 'root',
 	'dbpassword' => '',
+	'dbsocket' => '/var/lib/mysql/mysql.sock',
 
 	# adsense
 	# 'adsenseId' => 'pub-8024486686536860',
@@ -35,7 +36,20 @@ $CGI::LIST_CONTEXT_WARN = 0;
 	'menuBackground' => '#000080',
 	'menuForeground' => '#ffffff',
 	'menuSelected' => '#c0c0ff',
-	'menuItems' => [ 'Home', 'Events', 'Crew List', 'Roster', 'Mailing List', 'Messages', 'For Sale', 'Links', 'Dues', 'Photos' ],
+	'menuItems' => [
+		'Home',
+		'Events',
+#               'Crew List',
+		'Roster',
+		'Mailing List',
+#               'Messages',
+		'Charters',
+#               'For Sale',
+		'Links',
+		'Dues',
+		'Photos'
+		],
+
 	'menuHrefs' => {
 		'Home' => '/',
 		'Events' => '/schedule/',
@@ -57,7 +71,10 @@ $CGI::LIST_CONTEXT_WARN = 0;
 	'crewPositions' => ['Helm','Crew'],
 
 	# schedule
+	
+	## need to update this manually each year
 	'defaultYear' => 2013,
+
 	'series' => [
 		{
 			'name' => 'Thursday',
