@@ -16,8 +16,9 @@ $CGI::LIST_CONTEXT_WARN = 0;
 	# database
 	'dbname' => 'vanguard15',
 	'dbuser' => 'root',
-	'dbpassword' => '',
-	'dbsocket' => '/var/lib/mysql/mysql.sock',
+	'dbpassword' => 'dev',
+	'dbhost' => 'mysql',
+	#'dbsocket' => '/var/lib/mysql/mysql.sock',
 
 	# adsense
 	# 'adsenseId' => 'pub-8024486686536860',

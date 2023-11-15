@@ -6,7 +6,7 @@ Software for running sailing fleet websites.
 ## Webserver setup
 
 ### CentOS 7 with Apache 2.4
-```
+```bash
 # If needed
 ln -s /usr/local/bin/perl /bin/perl
 # Libraries
@@ -31,7 +31,7 @@ cpan install -f LWP::Parallel;
 ```
 
 ## Ubuntu with nginx as a reverse-proxy to Apache 2.4
-```
+```bash
 # If needed
 ln -s /usr/bin/perl /usr/local/bin/perl 
 # Libraries
@@ -47,21 +47,25 @@ cpan install -f LWP::Parallel;
 
 ## Both 
 
-Then add `vanguard15.org-apache.conf` to your loaded VirtualHosts.
+1. Add `vanguard15.org-apache.conf` to the loaded VirtualHosts.
+1. Create the "vanguard15" user:
+    ```bash
+    /usr/sbin/useradd vanguard15
+    passwd vanguard15
+    # Enter the desired password
+    htpasswd -c /mnt/home/vanguard15/.htpasswd vanguard15
+    # Enter the desired password
+    ```
+1. On the database, make sure you set the default timezone to be your preferred one.  E.g., for Pacific time, in `/etc/mysql/my.cnf` add
 
-Create the "vanguard15" user:
-```
-/usr/sbin/useradd vanguard15
-passwd vanguard15
-# Enter the desired password
-htpasswd -c /media/sf_shared/vanguard15/.htpasswd vanguard15
-# Enter the desired password
-```
+    ```bash
+    default-time-zone='-07:00'
+    ```
 
-On the database, make sure you set the default timezone to be your preferred one.  E.g., for Pacific time, in `/etc/mysql/my.cnf` add
-
-```
-default-time-zone='-07:00'
-```
-
-under the [mysqld] section.
+    under the [mysqld] section.
+1. Update the following in `myfleet/sites/vanguard15.org/MyfleetConfig.pm` and `myfleet/sites/vanguard15.org/MyphotoConfig.pm`:
+    * dbname
+    * dbuser
+    * dbpassword
+    * dbsocket
+    * defaultYear (annually)

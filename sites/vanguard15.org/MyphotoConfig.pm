@@ -14,7 +14,8 @@ require Exporter;
 	# database
 	'dbname' => 'vanguard15',
 	'dbuser' => 'root',
-	'dbpassword' => '',
+	'dbpassword' => 'dev',
+	'dbhost' => 'mysql',
 
 	# adsense
 	'adsenseId' => 'pub-8024486686536860',
